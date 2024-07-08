@@ -1,0 +1,682 @@
+* {
+  Margin: 0;
+  padding: 0;
+  /* la siguiente propiedad hace que cada caja ya incluya al border y al padding */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  /* background-color: bisque; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inicio Cabecera */
+
+.cabecera {
+  text-align: center;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  width: 100%;
+  height: 50px;
+  padding: 0 40px;
+}
+
+.cabecera__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cabecera__img {
+  object-fit: cover;
+  height: 90%;
+  margin-right: 10px;
+}
+
+/* Inicio Navegacion */
+
+.navegacion {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  width: 100%;
+  height: 60px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 25px 50px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.navegacion a:hover {
+  color: black;
+  background-color: orange;
+}
+
+/*Inicio Banner*/
+
+.banner {
+  background-image: url(https://thumbs.dreamstime.com/b/retro-car-poster-road-red-golden-sunset-as-background-minimalist-style-simple-design-282128405.jpg);
+  background-position: fixed;
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px #7e11dd;
+  color: white
+}
+
+.banner h1 {
+  font-size: 45px;
+}
+
+.banner h2 {
+  font-size: 25px;
+}
+
+.banner a {
+  background-color: aqua;
+  width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 75px;
+  color: black;
+}
+
+.banner a:hover {
+  background-color: rgb(255, 119, 0);
+  color: black;
+}
+
+/*---------------------------------------------------------------------------------------- */
+
+/* ******************************Comienzo section 2 ****************************************/
+
+/*---------------------------------------------------------------------------------------- */
+
+.seccion-2 {
+  /* border: 3px solid black; */
+  background-color: rgb(203, 231, 196);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5% 0; */
+}
+
+/* Clase del article --.bloque-izq-- */
+
+.bloque-izq {
+  /* border: 3px solid rgb(40, 11, 165); */
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 0 3%; */
+}
+
+/* Caja con los títulos h2 y h3 */
+
+.izq-titulo {
+  /* border: 3px solid rgb(27, 183, 16); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5% 0; */
+}
+
+.izq-titulo h2,
+.izq-titulo h3 {
+  text-align: center
+}
+
+.izq-titulo h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.izq-titulo h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: rgb(185, 24, 24);
+}
+
+.izq-img-parrafo img {
+  width: 100%;
+  max-height: 65vh;
+  /* height: 80vh; */
+  margin-bottom: 10px;
+}
+
+.izq-img-parrafo p {
+  width: 100%;
+  /* margin-top: 10px; */
+  text-align: center;
+  color: blue;
+  font-size: 15px;
+}
+
+/***************************************Bloque aside***********************************************/
+
+
+.aside-1 {
+  /* border: 3px solid rgb(11, 13, 134); */
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.aside-1-titulo {
+  /* border: 3px solid yellowgreen; */
+  text-align: center;
+}
+
+.aside-1-noticias {
+  /* border: 3px solid yellowgreen; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img {
+  width: cover;
+}
+
+.img img {
+  width: 100%;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.textos h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.textos p {
+  font-size: 15px;
+  text-align: justify;
+  padding: 10px;
+}
+
+/*---------------------------------------------------------------------------------------- */
+
+/* ******************************Comienzo section 3 ****************************************/
+
+/*---------------------------------------------------------------------------------------- */
+
+.seccion-3 {
+  background-color: blueviolet;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5% 0; */
+}
+
+.article {
+  background-color: rgb(193, 253, 253);
+  width: 60%;
+  height: 100%;
+  padding: 0 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.tabla-titulo {
+  /* background-color: beige; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabla-titulo h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.tabla-titulo h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: rgb(150, 83, 263);
+  /* color: rgb(63, 63, 63); */
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* No hace falta darle clase a h2, ni h3 ni al párrafo, porque se aplica descendencia con respecto al elemento padre que es el div con clase tabla-titulo*/
+
+.tabla-div {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  /* margin: 30px 0; */
+}
+
+.tabla {
+  table-layout: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  /* se trata del 100% de su padre que es tabla-div */
+}
+
+.fila-encabezado {
+  background-color: rgb(49, 146, 67);
+  width: auto;
+  height: 40px;
+}
+
+.fila-dato {
+  width: auto;
+  height: 40px;
+}
+
+.fila-dato:nth-child(odd) {
+  background-color: rgb(245, 245, 245);
+}
+
+.fila-dato:nth-child(::-webkit-meter-even-less-good-value) {
+  background-color: rgb(231, 231, 231);
+}
+
+.columna {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.aside {
+  background-color: red;
+  width: 40%;
+  height: 100%;
+}
+
+.mapa {
+  background-color: aquamarine;
+  width: 100%;
+  height: 35%;
+  border: 0;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.form-div {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  padding: 15 px;
+}
+
+.form-div h3 {
+  font-size: 24px;
+  padding: 5px 0;
+  text-align: justify;
+}
+
+.form-div p {
+  font-size: 18px;
+  padding: 10px 5px;
+  /* 10 px arriba y abajo y 5 pixeles a los costados */
+  text-align: justify
+}
+
+.formulario {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  height: 35px;
+  margin: 5px 0;
+  outline: none;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.textarea {
+  width: 100%;
+  /* height: 60px; */
+  margin: 5px 0;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.submit {
+  width: 50%;
+  height: 35px;
+  margin: 20px 0;
+  background-color: orange;
+  color: white;
+  border-radius: 5 px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+/* Fin section 3 */
+
+/* Inicio section 4 */
+
+/* El section-4 es el contenedor para el manejo de la grilla */
+
+.seccion-4 {
+  /* background-color: rgb(138, 109, 206); */
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  /* gap: 10px; */
+}
+
+.s4-header {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 20vh;
+  background-color: aqua;
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.caja1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: rgb(0, 255, 174);
+}
+
+.caja2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: rgb(102, 195, 172);
+}
+
+.caja3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: yellowgreen;
+}
+
+.caja4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: gray;
+}
+
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Con esta propiedad indico que la imagen se ajuste al 100% del ancho del contenedor */
+
+.caja1 img,
+.caja2 img,
+.caja3 img,
+.caja4 img {
+  max-width: 100%;
+}
+
+.caja1 p,
+.caja2 p,
+.caja3 p,
+.caja4 p {
+  text-align: justify;
+  margin: 10px;
+}
+
+.caja1 h2,
+.caja2 h2,
+.caja3 h2,
+.caja4 h2 {
+  text-align: center;
+}
+
+.rs-nav {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink
+}
+
+.rs-nav h3 {
+  width: 40%;
+  margin-left: 600px;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+}
+
+.footer h3 {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Fin section 4 */
+
+/* Para remover el fondo de las imágenes
+
+https: //www.remove.bg/es/upload */
+
+@media screen and (min-width:0px) and (max-width:480px) {
+
+  .seccion-2 {
+    background-color: rgb(102, 226, 139);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bloque-izq {
+    /* border: 5px solid black; */
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+  }
+
+  .izq-titulo {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 5% 0;
+    /* flex-direction: column; */
+    /* object-fit: cover; */
+    text-align: center;
+  }
+
+  .izq-titulo h2 {
+    font-size: 28px;
+  }
+
+  .izq-titulo h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgb(78, 58, 58);
+  }
+
+  .izq-img {
+    width: 100%;
+    /* margin: 30px 0; */
+  }
+
+  .izq-img img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .izq-parrafo {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  /********************************/
+
+  .bloque-der {
+    width: 100%;
+    height: 60vh;
+    padding: 0 3%;
+  }
+
+  .der-titulo {
+    text-align: center;
+  }
+
+  .der-titulo h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .der-noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 30px 0;
+  }
+
+  .noticias-img {
+    width: 100%;
+  }
+
+  .noticias-img img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .noticias-textos {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .noticias-textos h4 {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .noticias-textos p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+
+  }
+}

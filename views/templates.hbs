@@ -1,0 +1,24 @@
+  <!-- Datos de la tabla -->
+
+  {{#each data1}}
+    <tr class="fila-dato">
+      <td class="columna">{{marca}}</td>
+      <td class="columna">{{modelo}}</td>
+      <td class="columna">{{año}}</td>
+      <td class="columna">{{precio}}</td>
+      <td class="columna">{{color}}</td>
+    </tr>
+  {{/each}}
+ 
+ <!-- DIV Dinámico. Llenado con imágenes en sección 4 desde tabla autosimages-->
+{{#each data2}}
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 align-content-end">
+    <div>
+      <img src="{{urlImage}}" class="img-fluid" alt="..." />
+    </div>
+    <p>
+      {{descripcion}}
+    </p>
+    <h2 class="fw-bold">{{precio}}</h2>
+  </div>
+{{/each}}

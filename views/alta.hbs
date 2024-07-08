@@ -1,0 +1,56 @@
+<div class="container-fluid" style="background-color: coral; height: 100vh;">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+
+      <h1 class="text-center text-dark p-2 mt-4">Alta De Autos 0 KM y usados</h1>
+
+      <form action="/autos/alta" method="post" enctype="multipart/form-data">
+
+        <div class="form-group my-3">
+          <label for="exampleFormControlFile1">Imagen</label>
+          <input
+            type="file"
+            class="form-control"
+            id="exampleFormControlFile1"
+            name="urlImage"
+          />
+        </div>
+
+        <div class="form-group my-3">
+          <label for="formGroupExampleInput">Descripción</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Ingrese la descripción del auto"
+            name="descripcion"
+          />
+        </div>
+
+        <div class="form-group my-3">
+          <label for="formGroupExampleInput2">Precio</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput2"
+            placeholder="Ingrese el precio"
+            name="precio"
+          />
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button type="submit" class="btn btn-secondary btn-block mt-5">Agregar
+
+          </button>
+
+          <a
+            href="/autos/listado"
+            class="btn btn-secondary btn-block mt-4"
+          >Retornar</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
